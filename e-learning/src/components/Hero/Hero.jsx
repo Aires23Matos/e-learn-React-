@@ -1,31 +1,31 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import Blob from '../../assets/blob.svg';
 import { IoIosArrowForward } from "react-icons/io";
+import Blob from '../../assets/blob.svg';
 import HeroPng from '../../assets/unnamed.png';
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
-export const FadeUp = (delay) =>{
-    return{
-        initial: {
-            opacity: 0,
-            y: 50,
-          },
-          animate: {
-            opacity: 1,
-            y: 0,
-            transition: {
-              type: 'string',
-              stiffness: 100,
-              duration: 0.5,
-              delay: delay,
-              ease: 'easeInOut'
-            }
-        }
-    }
-}
 
+export const FadeUp = (delay) => {
+  return {
+    initial: {
+      opacity: 0,
+      y: 50,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: 'string',
+        stiffness: 100,
+        duration: 0.5,
+        delay: delay,
+        ease: 'easeInOut'
+      }
+    }
+  }
+}
 const Hero = () => {
     return(
         <section className="bg-light 
@@ -74,13 +74,14 @@ const Hero = () => {
                 initial={{x: 50, opacity: 0}}
                 animate = {{x: 0, opacity: 1}}
                 transition= {{duration: 0.6, delay: 0.2, ease: "easeInOut"}}
-                 src={Blob}
+                src={Blob}
                 className="absolute -bottom-32 w-[800px]
-                md:w[1500] z-[1] hidden md:block"/>
+                md:-w[1500px] z-[1] hidden md:block"/>
               </div>
             </div>
         </section>
-    );
+    );  
+
 }
 
 export default Hero;

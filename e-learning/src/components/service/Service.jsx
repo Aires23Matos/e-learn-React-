@@ -6,6 +6,7 @@ import { IoMdHappy } from "react-icons/io";
 import { TbWorldWww } from "react-icons/tb";
 import { IoPulseOutline } from "react-icons/io5";
 import { BiSupport } from "react-icons/bi";
+// eslint-disable-next-line no-unused-vars
 import {motion} from "framer-motion";
 
 const ServicesData = [

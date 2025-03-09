@@ -1,7 +1,7 @@
 import React from "react";
-import {IoMdMenu} from "react-icons/io";
+import { IoMdMenu } from "react-icons/io";
 // eslint-disable-next-line no-unused-vars
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const NavbarMenu = [
     {
@@ -33,41 +33,42 @@ const NavbarMenu = [
 
 const Navbar = () => {
     return(
-        <nav className="relative z-20 ">
-            <motion.div className="container py-10 flex justify-between items-center">
-                {/*Logo section*/}
-                <div>
-                    <h1 className="font-bold text-2xl">A Jornada de Codificação</h1>
-                </div>
-                {/*Menu section*/}
+       <nav className="relative z-20">
+            <motion.div 
+                initial = {{opacity: 0, y: -50}}
+                animate = {{opacity: 1, y:0}}
+                className="container py-10 flex
+                justify-between items-center">
+                {/*Logo section */}
+                    <div>
+                        <h1 className="font-bold text-2xl">A Jornada de Codificação</h1>
+                    </div>
+                {/*Menu section */}
                 <div className="hidden lg:block">
                     <ul className="flex items-center gap-3">
-                        {
-                            NavbarMenu.map((menu) => (
-                                <li key={menu.id}>
-                                    <a href={menu.path}
+                        {NavbarMenu.map((menu) => (
+                            <li key={menu.id}>
+                                <a href={menu.path}
                                     className="inline-block
-                                    py-2 px3 hover: text-secondary relative
-                                    group">
-                                        <div className="w-2 h-2 bg-secondary absolute
-                                        mr-2 left-1/2 rounded-full -translate-x-1/2 top-1/2 bottom-0
-                                    group-hover:block hidden">
-
-                                        </div>
-                                        {menu.title}
-                                    </a>
-                                </li>
-                            ))
-                        }
-                         <button className="primary-btn">Iniciar sessão</button>
+                                    py-2 px3 hover:text-secondary relative 
+                                    group"
+                                >
+                                <div className="w-2 h-2 bg-secondary absolute
+                                mr-2 left-1/2 rounded-full -translate-x-1/2 top-1/2 bottom-0
+                                group-hover:block hidden">
+                                </div> 
+                                {menu.title}</a>
+                            </li>
+                        ))}
+                        <button className="primary-btn">Iniciar sessão</button>
                     </ul>
                 </div>
-                   {/*Mobile Humburger menun section */}
-                   <div className="lg:hidden">
+                {/*Mobile Humburger menun section */}
+                <div className="lg:hidden">
                     <IoMdMenu className="text-4xl"/> 
                 </div>
             </motion.div>
-        </nav>
+       </nav>
     );
 }
 

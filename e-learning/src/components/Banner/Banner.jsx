@@ -17,7 +17,8 @@ const Banner = () => {
                 <motion.img
                 initial ={{opacity: 0, x: -50}}
                 whileInView={{opacity: 1, x: 0}} 
-                transition={{duration: 0.5, ease: "easeInOut    "}} 
+                viewport={{once: true}}
+                transition={{duration: 0.5, ease: "easeInOut"}} 
                 src={BannerPng}
                 alt=""
                 className="w-[350px] md:max-w-[450px]
