@@ -19,8 +19,7 @@ const Banner2 = () => {
                     <h1 className="text-4xl font-bold !leading-snug">Junte-se à nossa Comissão para começar a sua jornada</h1>
                     <p className="text-dark2">
                         Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Recusande
-                        iusto minima ad id eos acusantium aut,
+                        adipisicing elit. Recusande iusto minima ad id eos acusantium aut,
                         aperiam quis incidunt
                     </p>
                     <a href=""
