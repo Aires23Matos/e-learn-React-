@@ -25,15 +25,16 @@ const Subscribe = () => {
          className="flex flex-col justify-center">
           <div className="text-center space-y-4 lg:max-w-[430px] mx-auto">
           <h1 className="text-4xl font-bold !leading-snug">
-            450k+ Students are learning from us
+            450k+ Os alunos estão a aprender connosco
           </h1>
           <p>
             lorem ipsum dolor sit amet conseter adipisicing
             elit.
             Recusandae iusto iusto minima 
           </p>
-            <a href="" className="primary-btn !mt-8 inline-flex items-center gap-4 group">
-              Subscribe Now
+            {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+              <a href="#" className="primary-btn !mt-8 inline-flex items-center gap-4 group">
+              Inscreva-se agora
               <FaBell className="group-hover:animate-bounce group-hover:text-lg duration-200"/>
             </a>
 

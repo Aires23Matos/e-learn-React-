@@ -16,7 +16,7 @@ const Banner2 = () => {
                  whileInView={{opacity: 1, x:0}}
                  className="flex flex-col justify-center">
                     <div className="text-center md:text-left space-y-4 lg:max-x-[450px]">
-                    <h1 className="text-4xl font-bold !leading-snug">Join Our Commity to start your Journey</h1>
+                    <h1 className="text-4xl font-bold !leading-snug">Junte-se à nossa Comissão para começar a sua jornada</h1>
                     <p className="text-dark2">
                         Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Recusande
@@ -24,7 +24,7 @@ const Banner2 = () => {
                         aperiam quis incidunt
                     </p>
                     <a href=""
-                    className="primary-btn !mt-8">Join Now</a>
+                    className="primary-btn !mt-8">Registe-se agora</a>
                     </div>
                 </motion.div>
 
